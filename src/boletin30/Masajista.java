@@ -5,40 +5,95 @@ package boletin30;
  */
 public class Masajista extends SeleccionFutbol {
 
-    private String titulacion;
-    private int añosExperiencia;
+    String titulacion;
+    int aniosExperiencia;
 
-    public Masajista(String titulacion, String nombre, String apellidos, int edad,int añosExperiencia, int id) {
-        super(id, nombre, apellidos, edad);
-        this.titulacion = titulacion;
-        this.añosExperiencia = añosExperiencia;
+    public Masajista() {
+        
     }
-    
 
-	// Constructor, getter y setter
-
-    public String getTitulacion() {
-        return titulacion;
+    public Masajista(String titulacion, int aniosExperiencia, int id, int edad, String nombre, String apellidos) {
+        super(id, edad, nombre, apellidos);
+        this.titulacion = titulacion;
+        this.aniosExperiencia = aniosExperiencia;
     }
 
     public void setTitulacion(String titulacion) {
         this.titulacion = titulacion;
     }
 
-    public int getAñosExperiencia() {
-        return añosExperiencia;
+    public void setAniosExperiencia(int aniosExperiencia) {
+        this.aniosExperiencia = aniosExperiencia;
+    }
+    
+    @Override
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    @Override
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
-    public void setAñosExperiencia(int añosExperiencia) {
-        this.añosExperiencia = añosExperiencia;
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-	@Override
-	public void entrenar() {
-		System.out.println("Da asistencia en el entrenamiento (Clase Masajista)");
-	}
+    @Override
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
 
-	public void darMasaje() {
-		System.out.println("Da un Masaje");
-	}
+    public String getTitulacion() {
+        return titulacion;
+    }
+
+    public int getAniosExperiencia() {
+        return aniosExperiencia;
+    }
+
+    @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public int getEdad() {
+        return edad;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public String getApellidos() {
+        return apellidos;
+    }
+    
+    public void darMasaje(){}
+
+    @Override
+    public void concentrarse(){
+    System.out.println("O masajista "+ nombre+" "+apellidos + " concentrase");
+    }
+
+    @Override
+    public void viajar(){}
+
+    @Override
+    public void entrenar(){}
+
+    @Override
+    public void jugarPartido(){}
+
+    @Override
+    public String toString() {
+        return super.toString() + "Titulacion= " + titulacion + "\nAniosExperiencia= " + aniosExperiencia;
+    }
+    
+    
 }

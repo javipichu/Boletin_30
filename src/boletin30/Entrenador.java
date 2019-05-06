@@ -5,41 +5,84 @@ package boletin30;
  * @author raguiarperez
  */
 public class Entrenador extends SeleccionFutbol {
+   public int idFedereacion;
 
-    private int idFederacion;
-    // Constructor
-
-    public Entrenador(String nombre, String apellidos, int edad,int idFederacion, int id) {
-        super(id, nombre, apellidos, edad);
-        this.idFederacion = idFederacion;
-    }
-        
-
-   
-        
-       // getter y setter
-
-    public int getIdFederacion() {
-        return idFederacion;
+    public Entrenador() {
     }
 
-    public void setIdFederacion(int idFederacion) {
-        this.idFederacion = idFederacion;
+    public Entrenador(int idFedereacion, int id, int edad, String nombre, String apellidos) {
+        super(id, edad, nombre, apellidos);
+        this.idFedereacion = idFedereacion;
     }
 
-	@Override
-	public void entrenar() {
-		System.out.println("Dirige un entrenamiento (Clase Entrenador)");
+    public void setIdFedereacion(int idFedereacion) {
+        this.idFedereacion = idFedereacion;
+    }
 
-	}
+    @Override
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	@Override
-	public void jugarPartido() {
-		System.out.println("Dirige un Partido (Clase Entrenador)");
-	}
+    @Override
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
-	public void planificarEntrenamiento() {
-		System.out.println("Planificar un Entrenamiento");
-	}
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public int getIdFedereacion() {
+        return idFedereacion;
+    }
+
+    @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public int getEdad() {
+        return edad;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void planificarEntrenamineto(){}
+    
+    @Override
+    public void concentrarse(){
+    System.out.println("O entrenador "+ nombre+" "+apellidos + " concentrase");
+    }
+
+    @Override
+    public void viajar(){}
+
+    @Override
+    public void entrenar(){}
+
+    @Override
+    public void jugarPartido(){}
+
+    @Override
+    public String toString() {
+        return super.toString() + "IdFedereacion= " + idFedereacion;
+    }
+    
+    
 }
-	

@@ -4,67 +4,55 @@ package boletin30;
  * @author raguiarperez
  */
 public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
-	protected int id;
-	protected String nombre;
-	protected String apellidos;
-	protected int edad;
-        
-	public SeleccionFutbol() {
-	}
 
-	public SeleccionFutbol(int id, String nombre, String apellidos, int edad) {
-		this.id = id;
-		this.nombre = nombre;
-		this.apellidos = apellidos;
-		this.edad = edad;
-	}
-	// Constructor, getter y setter
+    protected int id,edad;
+    protected String nombre,apellidos;
 
-    public int getId() {
-        return id;
+    public SeleccionFutbol() {
+    }
+
+    public SeleccionFutbol(int id, int edad, String nombre, String apellidos) {
+        this.id = id;
+        this.edad = edad;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getApellidos() {
-        return apellidos;
-    }
-
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public int getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public String getNombre() {
+        return nombre;
     }
 
-        
-        
-	public void concentrarse() {
-		System.out.println("Concentrarse (Clase Padre)");
-	}
-	public void viajar() {
-		System.out.println("Viajar (Clase Padre)");
-	}	
-	public void entrenar() {
-		System.out.println("Entrenar (Clase Padre)");
-	}
-	public void jugarPartido() {
-		System.out.println("Asiste al Partido de Fútbol (Clase Padre)");
-	}
+    public String getApellidos() {
+        return apellidos;
+    }
 
+    @Override
+    public String toString() {
+        return "Id= " + id + "\nEdad= " + edad + "\nNombre= " + nombre + "\nApellidos= " + apellidos + "\n";
+    }
 }
+    
