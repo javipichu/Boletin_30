@@ -2,7 +2,7 @@ package boletin30;
 
 /**
  *
- * @author slorenzorodriguez
+ * @author jalvarezotero
  */
 public class Entrenador extends SeleccionFutbol {
    public int idFedereacion;
