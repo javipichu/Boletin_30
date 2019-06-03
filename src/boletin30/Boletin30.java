@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
- * @author raguiarperez
+ * @author slorenzorodriguez
  */
 public class Boletin30 {
 // ArrayList de objetos SeleccionFutbol. Idenpendientemente de la clase hija a la que pertenezca el objeto

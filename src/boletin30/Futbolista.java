@@ -1,6 +1,6 @@
 package boletin30;
 /**
- * @author raguiarperez
+ * @author slorenzorodriguez
  */
 public class Futbolista extends SeleccionFutbol {
 

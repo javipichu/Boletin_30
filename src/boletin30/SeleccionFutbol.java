@@ -1,7 +1,7 @@
 package boletin30;
 
 /**
- * @author raguiarperez
+ * @author slorenzorodriguez
  */
 public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
 

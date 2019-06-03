@@ -3,7 +3,7 @@ package boletin30;
 
 /**
  *
- * @author raguiarperez
+ * @author slorenzorodriguez
  */
 public interface IntegranteSeleccionFutbol {
     	void concentrarse();
